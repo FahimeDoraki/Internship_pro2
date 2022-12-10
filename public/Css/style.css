@@ -1,0 +1,22 @@
+
+
+html {
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+}
+
+.sec1{
+    background: rgb(233, 233, 233);
+    height: 500px;
+    width: 100vw;
+    max-width: 100%;
+}
