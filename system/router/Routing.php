@@ -14,11 +14,12 @@ class Routing{
 
 public function run(){
 
-  $path = realpath(dirname(__FILE__) . "/../../app/Controllers/" . $this->current_route[0] . ".php");
+  $path = realpath(dirname(__FILE__) . "/../../app/controllers/" . $this->current_route[0] . ".php");
   if(empty($this->current_route[0])){
     header("Location: ".'http://localhost/home');
     exit;
-  }elseif(!file_exists($path)){
+  }
+  if(!file_exists($path)){
     echo "404 - file not exist!!";
     exit;
   }

@@ -7,6 +7,6 @@ RewriteRule ^(.+)$ index.php [QSA,L]
 
 RewriteEngine on
 RewriteCond %{THE_REQUEST} !/public/* [NC]
-RewriteCond %{THE_REQUEST} /(app|system|view)/.+ [NC]
+RewriteCond %{THE_REQUEST} /(app|system)/.+ [NC]
 RewriteRule ^ - [R=403,L]
 
