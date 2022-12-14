@@ -16,7 +16,7 @@ public function run(){
 
   $path = realpath(dirname(__FILE__) . "/../../app/controllers/" . $this->current_route[0] . ".php");
   if(empty($this->current_route[0])){
-    header("Location: ".'http://localhost/home');
+    header("Location: "."http://".$_SERVER['SERVER_NAME']."/home");
     exit;
   }
   if(!file_exists($path)){
